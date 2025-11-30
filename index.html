@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+     <div class="container mt-4">
+    <div class="row">
+    <div class="col-sm-12 col-md-6 offset-md-3">
+
+      <form id="blogForm" class="mb-4 bg-white  border p-3 rounded-sm"> 
+
+            <div class="form-group"> 
+        <label for="title">title</label>
+        <input type="text" id="title" class="form-control" required>
+         </div>
+
+         <div class="form-group">       
+        <label for="content">content</label>
+        <textarea type="text" id="content" class="form-control" rows="4" required>
+        </textarea>
+         </div>
+
+ <div class="form-group">
+     <label for="userid">user id</label>
+     <select class="form-control" id="userid" required>
+       <option value="1">1</option>
+       <option value="2">2</option>
+       <option value="3">3</option>
+       <option value="4">4</option>
+       <option value="5">5</option>
+       <option value="6">6</option>
+       <option value="7">7</option>
+       <option value="8">8</option> 
+       <option value="9">9</option>
+       <option value="10">10</option>
+     </select>
+ </div>         
+        <button type="submit" class="btn btn-outline-primary  btn-block" id="subbtn">submit</button>
+        <button type="button" class="btn btn-outline-primary btn-block d-none" id="upbtn">update</button>
+
+   </form>
+
+
+     
+    
+   <div id="postContainer" class="d-flex flex-column-reverse">
+   <!--- <div class="card mt-3">
+                <div class="card-header">
+                </div>
+                <div class="card-body"></div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-primary">edit</button>
+                    <button type="button" class="btn btn-outline-danger ">delete</button>
+                </div>
+            
+            
+        </div>-->
+        </div>
+    </div>    
+ </div>
+    </div>   
+
+    <div class="loader d-none" id="loader">
+         <div class="spinner-border text-primary" role="status"></div>
+        <p>loading....</p>
+    </div>     
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/p1.js"></script>
+    <!--<script src="./assets/js/p2.js"></script>-->
+    <!--<script src="./assets/js/p3.js"></script>-->
+</body>
+</html>
